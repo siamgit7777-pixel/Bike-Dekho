@@ -18,23 +18,53 @@
   font-style: normal;
 }
 </style>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <div class="poppins-regular px-32">
-        <nav class="flex place-content-between py-6 text-center ">
-        <h1 class="text-xl font-bold">Bike Dekho</h1>
-        <div class="flex gap-8 text-center">    
-            <p class="pt-2">Home</p>
-            <p class="pt-2">Shop</p>
-            <p class="pt-2">News</p>
-            <p class="pt-2">Contact</p>
-            <button class="border rounded px-5 py-2 hover:bg-[#F56440] hover:text-white">Login</button>
-        </div>
-    </nav>
+        <nav>
+            <div class="navbar ">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Item 1</a></li>
+        <li>
+          <a>Parent</a>
+          <ul class="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </div>
+    <a class="text-2xl font-bold">Bike Dekho</a>
+  </div>
+  <div class="navbar-end">
+    <div class="navbar-center hidden lg:flex pr-8">
+    <ul class="menu menu-horizontal px-1 text-lg">
+      <li><a>Home</a></li>
+      <li><a>Shop</a></li>
+      <li><a>News</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </div>
+    <a class="btn hover:bg-[#E76F51]">Login</a>
+  </div>
+</div>
+        </nav>
     <!-- collection section -->
     <section class="text-center py-8">
         <p class="text-3xl font-bold pb-5">Fetured Bikes In This Year</p>
-        <p class="text-[#E76F51] border-b-[#E76F51] pb-5">Best bike collection</p>
+        <p class="text-[#E76F51] border-b-[#E76F51] ">Best bike collection</p>
+        <hr class="w-16 mx-auto text-[#E76F51] pb-5">
         <div class="flex place-content-between">
             <img src="./images/others/feature-bike.png" alt="">
             <img src="./images/others/feature-bike.png" alt="">
